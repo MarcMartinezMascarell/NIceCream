@@ -21,5 +21,5 @@ MonoBehaviour:
   DefaultPrice: 4
   IsSellable: 0
   IsConsumable: 1
-  ItemPrefab: {fileID: 4938603440415759075, guid: b4d01c16469cf5c42a755794352d1f8c, type: 3}
+  ItemPrefab: {fileID: 4938603440415759075, guid: 213c586125c719c45b6d8f6968abf158, type: 3}
   PickUpSoundEffect: {fileID: 8300000, guid: 1892430a675c62245897d6f297d21507, type: 3}

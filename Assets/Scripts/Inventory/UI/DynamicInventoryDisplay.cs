@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Security.Cryptography;
+using Inventory.Inventory_Scripts;
 
 public class DynamicInventoryDisplay : InventoryDisplay
 {

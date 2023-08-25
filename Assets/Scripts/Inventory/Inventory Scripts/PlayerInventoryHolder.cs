@@ -1,9 +1,8 @@
 using SaveLoadSystem;
-using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-namespace Inventory
+namespace Inventory.Inventory_Scripts
 {
     public class PlayerInventoryHolder : InventoryHolder
     {
@@ -41,7 +40,7 @@ namespace Inventory
         {
             if (primaryInventorySystem.AddToInventory(data, amount))
             {
-                notificationsController.DisplayNotification(data.Icon, data.DisplayName,  $"x{amount}");
+                //notificationsController.DisplayNotification(data.Icon, data.DisplayName,  $"x{amount}");
                 return true;
             }
 

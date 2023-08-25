@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private PlayerInput playerInput;
     private Vector2 moveInput;
-    private float runMultiplier = 1f;
+    private float runMultiplier = 10f;
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;

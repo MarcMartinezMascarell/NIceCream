@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Inventory;
+using Inventory.Inventory_Scripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

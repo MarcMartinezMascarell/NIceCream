@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Inventory.Inventory_Scripts;
 using UnityEngine;
 
 public abstract class ItemSlot : ISerializationCallbackReceiver
