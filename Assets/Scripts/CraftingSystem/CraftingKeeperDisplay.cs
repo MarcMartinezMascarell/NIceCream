@@ -10,9 +10,11 @@ public class CraftingKeeperDisplay : MonoBehaviour
 {
     private CraftingSystem _craftingSystem;
     private PlayerInventoryHolder _playerInventoryHolder;
+    private CraftingKeeper _craftingKeeper;
     
     [SerializeField] private GameObject _recipesListPanel;
     [SerializeField] private GameObject _craftingUIItemPrefab;
+    [SerializeField] private TextMeshProUGUI _craftingTimerText;
     
     [Header("Item Preview Section")]
     [SerializeField] private Image _itemPreviewImage;
@@ -23,10 +25,11 @@ public class CraftingKeeperDisplay : MonoBehaviour
     
     public UnityAction<InventorySlot> OnInventorySlotChanged;
 
-    public void DisplayCraftingWindow(CraftingSystem craftingSystem, PlayerInventoryHolder playerInventoryHolder)
+    public void DisplayCraftingWindow(CraftingSystem craftingSystem, PlayerInventoryHolder playerInventoryHolder, CraftingKeeper craftingKeeper)
     {
         _craftingSystem = craftingSystem;
         _playerInventoryHolder = playerInventoryHolder;
+        _craftingKeeper = craftingKeeper;
         
         RefreshDisplay();
     }
@@ -51,12 +54,21 @@ public class CraftingKeeperDisplay : MonoBehaviour
             _playerInventoryHolder.PrimaryInventorySystem.RemoveFromInventory(item.item, item.amount);
         }
         
+        _craftingKeeper.CraftRecipe(_selectedRecipe);
+        
+        // foreach (var item in _selectedRecipe.craftedItems)
+        // {
+        //     _playerInventoryHolder.PrimaryInventorySystem.AddToInventory(item.item, item.amount);
+        // }
+    }
+
+    private void AddToPlayerInventory()
+    {
         foreach (var item in _selectedRecipe.craftedItems)
         {
             _playerInventoryHolder.PrimaryInventorySystem.AddToInventory(item.item, item.amount);
         }
     }
-    
     private bool CanCraftSelectedItem()
     {
         if(_selectedRecipe == null) return false;
@@ -99,5 +111,11 @@ public class CraftingKeeperDisplay : MonoBehaviour
         _itemPreviewImage.sprite = itemData.Icon;
         _itemPreviewName.text = itemData.DisplayName;
         _itemPreviewDescription.text = itemData.Description;
+    }
+
+    private IEnumerator WaitRecipeTime()
+    {
+        yield return new WaitForSeconds(_selectedRecipe.craftTime);
+        AddToPlayerInventory();
     }
 }

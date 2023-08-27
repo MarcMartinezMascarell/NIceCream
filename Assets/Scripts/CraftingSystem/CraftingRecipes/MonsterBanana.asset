@@ -20,3 +20,6 @@ MonoBehaviour:
   craftedItems:
   - item: {fileID: 11400000, guid: 4c146f6a6fb91f14995229618419d2a3, type: 2}
     amount: 3
+  craftTime: 6
+  isUnlocked: 0
+  needsWork: 0

@@ -44,9 +44,9 @@ public class UIController : MonoBehaviour
         _shopKeeperDisplay.DisplayShopWindow(shopSystem, playerInventoryHolder);
     }
     
-    private void DisplayCraftingWindow(CraftingSystem craftingSystem, PlayerInventoryHolder playerInventoryHolder)
+    private void DisplayCraftingWindow(CraftingSystem craftingSystem, PlayerInventoryHolder playerInventoryHolder, CraftingKeeper craftingKeeper)
     {
         _craftingKeeperDisplay.gameObject.SetActive(true);
-        _craftingKeeperDisplay.DisplayCraftingWindow(craftingSystem, playerInventoryHolder);
+        _craftingKeeperDisplay.DisplayCraftingWindow(craftingSystem, playerInventoryHolder, craftingKeeper);
     }
 }
