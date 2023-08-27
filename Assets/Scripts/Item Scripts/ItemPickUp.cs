@@ -118,6 +118,7 @@ public class ItemPickUp : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         myCollider.enabled = true;
+        this.originalY = this.transform.position.y;
     }
 }
 

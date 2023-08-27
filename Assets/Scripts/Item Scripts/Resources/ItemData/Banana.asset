@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1035d76ccb004459c2cdc7afc36a22, type: 3}
   m_Name: Banana
   m_EditorClassIdentifier: 
-  ID: -1
+  ID: 0
   DisplayName: Banana
   Description: Ingredient to make ice cream.
   Icon: {fileID: 619636554, guid: c38ad82eefba85c4b9370d125cdae0e2, type: 3}
@@ -21,5 +21,5 @@ MonoBehaviour:
   DefaultPrice: 0.8
   IsSellable: 0
   IsConsumable: 0
-  ItemPrefab: {fileID: 4938603440415759075, guid: 581defa820070f14693bf454c9842cfa, type: 3}
+  ItemPrefab: {fileID: 4938603440415759075, guid: 81417f0cc50695146b88a522d9e22a2b, type: 3}
   PickUpSoundEffect: {fileID: 0}

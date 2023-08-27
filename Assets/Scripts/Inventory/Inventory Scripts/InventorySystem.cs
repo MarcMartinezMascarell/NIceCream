@@ -155,4 +155,19 @@ public class InventorySystem
             }
         }
     }
+
+    public int GetItemCount(InventoryItemData itemItem)
+    {
+        //Count how many items are in the inventory in total
+        var count = 0;
+        foreach (var slot in InventorySlots)
+        {
+            if (slot.ItemData == itemItem)
+            {
+                count += slot.StackSize;
+            }
+        }
+        
+        return count;
+    }
 }

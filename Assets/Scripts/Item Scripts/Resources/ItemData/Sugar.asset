@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1035d76ccb004459c2cdc7afc36a22, type: 3}
   m_Name: Sugar
   m_EditorClassIdentifier: 
-  ID: -1
+  ID: 1
   DisplayName: Sugar
   Description: Ingredient to make ice cream.
   Icon: {fileID: -491761024, guid: 6cbf81962ea50044798360cce39e19ea, type: 3}
