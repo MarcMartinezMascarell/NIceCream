@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 10.9405}
-  m_SizeDelta: {x: 52.7565, y: 21.881}
+  m_AnchoredPosition: {x: 0.68909, y: 14.815805}
+  m_SizeDelta: {x: 51.378, y: 14.1303}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &73912501466628086
 CanvasRenderer:
@@ -167,14 +167,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -218,6 +218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8928701387073057475}
+  - component: {fileID: -3060474694269327715}
   m_Layer: 5
   m_Name: CraftingItemUI
   m_TagString: Untagged
@@ -246,3 +247,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-3060474694269327715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7417431140494040284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4fdf41409cc334daf2ee0ddb932bce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemSprite: {fileID: 2201041600237922532}
+  _amountText: {fileID: 7671791485427413192}
+  _assignedCraftingSlot:
+    itemID: -1
+    stackSize: -1

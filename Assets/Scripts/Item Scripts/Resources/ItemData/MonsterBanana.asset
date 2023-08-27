@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1035d76ccb004459c2cdc7afc36a22, type: 3}
+  m_Name: MonsterBanana
+  m_EditorClassIdentifier: 
+  ID: -1
+  DisplayName: Monster Banana
+  Description: Ingredient to make ice cream.
+  Icon: {fileID: 1282931413, guid: c38ad82eefba85c4b9370d125cdae0e2, type: 3}
+  MaxStackSize: 8
+  Weight: 0
+  DefaultPrice: 1.5
+  IsSellable: 0
+  IsConsumable: 0
+  ItemPrefab: {fileID: 4938603440415759075, guid: 581defa820070f14693bf454c9842cfa, type: 3}
+  PickUpSoundEffect: {fileID: 0}

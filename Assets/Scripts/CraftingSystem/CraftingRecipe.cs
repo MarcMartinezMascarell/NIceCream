@@ -1,12 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Inventory System/Crafting Recipe")]
-public class CraftingRecipe : MonoBehaviour
+public class CraftingRecipe : ScriptableObject
 {
     public List<CraftingItem> requiredItems;
-    public List<CraftingItem> craftedItem;
+    public List<CraftingItem> craftedItems;
     
     public bool CanCraft(InventorySystem inventorySystem)
     {
@@ -30,7 +31,7 @@ public class CraftingRecipe : MonoBehaviour
             inventorySystem.RemoveFromInventory(item.item, item.amount);
         }
         
-        foreach (var item in craftedItem)
+        foreach (var item in craftedItems)
         {
             inventorySystem.AddToInventory(item.item, item.amount);
         }
@@ -39,6 +40,7 @@ public class CraftingRecipe : MonoBehaviour
     
 }
 
+[Serializable]
 public struct CraftingItem
 {
     public InventoryItemData item;

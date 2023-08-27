@@ -52,6 +52,18 @@ public class InventorySystem
 
         return invSlot.Count > 0;
     }
+    
+    public bool ContainsItems(InventoryItemData itemToAdd, int amount, out List<InventorySlot> invSlot, int offset = 0)
+    {
+        invSlot = InventorySlots.Skip(offset).Where(i => i.ItemData == itemToAdd).ToList();
+        // if (invSlot.Count == 0)
+        // {
+        //     invSlot = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
+        // }
+        
+
+        return invSlot.Count >= amount;
+    }
 
     public bool HasFreeSlot(out InventorySlot invSlot, int offset = 0)
     {
