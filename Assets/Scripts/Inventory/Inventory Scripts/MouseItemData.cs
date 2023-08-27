@@ -13,7 +13,7 @@ namespace Inventory.Inventory_Scripts
         public Image ItemSprite;
         public TextMeshProUGUI ItemCount;
         public InventorySlot AssignedInventorySlot;
-        [SerializeField] private float _dropDistance = 2f;
+        //[SerializeField] private float _dropDistance = 2f;
     
         private Transform _playerTransform;
         private Animator _playerAnimator;

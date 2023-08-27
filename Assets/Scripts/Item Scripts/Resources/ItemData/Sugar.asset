@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1035d76ccb004459c2cdc7afc36a22, type: 3}
   m_Name: Sugar
   m_EditorClassIdentifier: 
-  ID: 1
+  ID: -1
   DisplayName: Sugar
-  Description: Sugar is userd to create ice cream.
-  Icon: {fileID: 1937408226, guid: 6cbf81962ea50044798360cce39e19ea, type: 3}
-  MaxStackSize: 64
+  Description: Ingredient to make ice cream.
+  Icon: {fileID: -491761024, guid: 6cbf81962ea50044798360cce39e19ea, type: 3}
+  MaxStackSize: 99
   Weight: 0
-  DefaultPrice: 0.1
-  IsSellable: 1
+  DefaultPrice: 0.2
+  IsSellable: 0
   IsConsumable: 0
-  ItemPrefab: {fileID: 0}
-  PickUpSoundEffect: {fileID: 8300000, guid: 1892430a675c62245897d6f297d21507, type: 3}
+  ItemPrefab: {fileID: 4938603440415759075, guid: 581defa820070f14693bf454c9842cfa, type: 3}
+  PickUpSoundEffect: {fileID: 0}

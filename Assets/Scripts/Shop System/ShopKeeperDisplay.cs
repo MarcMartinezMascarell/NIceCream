@@ -245,6 +245,7 @@ public class ShopKeeperDisplay : MonoBehaviour
     private void UpdateItemPreview(ShopSlotUI shopSlotUI)
     {
         _itemPreviewImage.sprite = shopSlotUI.AssignedItemSlot.ItemData.Icon;
+        _itemPreviewImage.color = Color.white;
         _itemPreviewName.text = shopSlotUI.AssignedItemSlot.ItemData.DisplayName;
         _itemPreviewDescription.text = shopSlotUI.AssignedItemSlot.ItemData.Description;
     }

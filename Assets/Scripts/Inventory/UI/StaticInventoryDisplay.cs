@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Inventory;
-using Inventory.Inventory_Scripts;
 using UnityEngine;
 
 public class StaticInventoryDisplay : InventoryDisplay

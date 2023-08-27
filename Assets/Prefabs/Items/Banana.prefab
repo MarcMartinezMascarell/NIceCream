@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4938603440415759100}
   - component: {fileID: 4938603440415759096}
   m_Layer: 0
-  m_Name: WoodPlank
+  m_Name: Banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.84, y: -2.9, z: 9.980081}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.13118337, y: 0.13118337, z: 0.13118337}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,9 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1297755071
-  m_SortingLayer: 3
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1289405563, guid: 6cbf81962ea50044798360cce39e19ea, type: 3}
+  m_Sprite: {fileID: 619636554, guid: c38ad82eefba85c4b9370d125cdae0e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -173,14 +173,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickUpRadious: 1
-  ItemData: {fileID: 11400000, guid: b0caf9f99381b4a4899e886aab2c2b57, type: 2}
+  ItemData: {fileID: 11400000, guid: 9634664ba21e466419c33e1c0e88b0b5, type: 2}
   _colliderEnableDelay: 0.5
   _throwGravity: 1
   _minThrowXForce: 2
   _maxThrowXForce: 4
   _throwYForce: 2
   itemSaveData:
-    ItemData: {fileID: 11400000, guid: b0caf9f99381b4a4899e886aab2c2b57, type: 2}
+    ItemData: {fileID: 11400000, guid: 9634664ba21e466419c33e1c0e88b0b5, type: 2}
     Position: {x: 0, y: 0, z: 0}
     Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &4938603440415759096
@@ -195,4 +195,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf5700a92d7788a4ea30b51e9c57e282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: bd760fb8-969d-4cb2-bb39-6da38e7dab04
+  _id: 6f2895d5-5388-4e4b-8a42-77b611071ed1

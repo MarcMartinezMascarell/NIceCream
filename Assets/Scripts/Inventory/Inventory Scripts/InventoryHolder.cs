@@ -2,7 +2,7 @@ using SaveLoadSystem;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Inventory.Inventory_Scripts
+namespace Inventory
 {
     [System.Serializable]
     public abstract class InventoryHolder : MonoBehaviour
