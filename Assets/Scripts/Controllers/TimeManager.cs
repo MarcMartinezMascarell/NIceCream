@@ -322,7 +322,7 @@ namespace DPUtils.Systems.DateTime
         
         public string DateToString()
         {
-            return $"{day} {date + 1}";
+            return $"{day} {date}";
         }
 
         public string TimeToString()
