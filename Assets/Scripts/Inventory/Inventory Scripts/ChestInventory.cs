@@ -39,7 +39,7 @@ public class ChestInventory : InventoryHolder, IInteractable
         interactSuccesful = true;
     }
 
-    public void EndInteracion()
+    public void EndInteraction()
     {
         
     }

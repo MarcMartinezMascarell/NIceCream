@@ -11,6 +11,8 @@ public class CraftingItemSlotUI : MonoBehaviour
     [SerializeField] private GameObject _requiredItemsPanel;
     [SerializeField] private GameObject _craftedItemsPanel;
     
+    [SerializeField] private Image _highlightImage;
+    
     private InventoryItemData _itemData;
     private Button _previewButton;
     private CraftingRecipe _recipe;
@@ -36,7 +38,9 @@ public class CraftingItemSlotUI : MonoBehaviour
     
     public void PreviewItem()
     {
+        ParentDisplay.CleanAllHighlights();
         ParentDisplay.DisplayItemPreview(_recipe);
+        _highlightImage.color = Color.white;
     }
 
     public void AddRecipe(CraftingRecipe recipe)
@@ -56,5 +60,10 @@ public class CraftingItemSlotUI : MonoBehaviour
             craftingItemUI.SetItem(item.item, item.amount, craftingItemUI.AssignedCraftingSlot);
             _itemData = item.item;
         }
+    }
+
+    public void CleanHighlight()
+    {
+        _highlightImage.color = Color.clear;
     }
 }

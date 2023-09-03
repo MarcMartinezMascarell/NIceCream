@@ -59,7 +59,8 @@ namespace Inventory.Inventory_Scripts
         {
             if (AssignedInventorySlot.ItemData.ItemPrefab != null)
             {
-                var item = PrefabUtility.InstantiatePrefab(AssignedInventorySlot.ItemData.ItemPrefab) as GameObject;
+                // var item = PrefabUtility.InstantiatePrefab(AssignedInventorySlot.ItemData.ItemPrefab) as GameObject;
+                var item = Instantiate(AssignedInventorySlot.ItemData.ItemPrefab);
                 item.transform.position = _playerTransform.position;
                 var itemPickUp = item.GetComponent<ItemPickUp>();
                 itemPickUp.Throw(_playerAnimator.GetFloat("horizontal"));

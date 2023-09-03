@@ -9,5 +9,5 @@ public interface IInteractable
 
     public void Interact(Interactor interactor, out bool interactSuccesful);
 
-    public void EndInteracion();
+    public void EndInteraction();
 }

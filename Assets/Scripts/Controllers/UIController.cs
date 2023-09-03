@@ -30,12 +30,20 @@ public class UIController : MonoBehaviour
     {
         ShopKeeper.OnShopWindowRequested += DisplayShopWindow;
         CraftingKeeper.OnCraftingWindowRequested += DisplayCraftingWindow;
+        CraftingKeeper.EndAllInteractions += CloseAllWindows;
     }
     
     private void OnDisable()
     {
         ShopKeeper.OnShopWindowRequested -= DisplayShopWindow;
         CraftingKeeper.OnCraftingWindowRequested -= DisplayCraftingWindow;
+        CraftingKeeper.EndAllInteractions -= CloseAllWindows;
+    }
+    
+    private void CloseAllWindows()
+    {
+        _shopKeeperDisplay.gameObject.SetActive(false);
+        _craftingKeeperDisplay.gameObject.SetActive(false);
     }
     
     private void DisplayShopWindow(ShopSystem shopSystem, PlayerInventoryHolder playerInventoryHolder)

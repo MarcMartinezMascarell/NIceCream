@@ -25,7 +25,7 @@ public class Interactor : MonoBehaviour
             }
         }
 
-        if (Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.tabKey.wasPressedThisFrame)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame || Keyboard.current.tabKey.wasPressedThisFrame || Keyboard.current.eKey.wasPressedThisFrame)
         {
             EndInteraction();
         }

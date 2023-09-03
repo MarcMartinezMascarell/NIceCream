@@ -44,12 +44,24 @@ TagManager:
   - name: GroundDetails
     uniqueID: 3568537675
     locked: 0
+  - name: Building Backgrounds
+    uniqueID: 3513983671
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Building Behind
+    uniqueID: 3453046765
     locked: 0
   - name: ColliderObjects
     uniqueID: 2997212225
     locked: 0
   - name: Player
     uniqueID: 815244053
+    locked: 0
+  - name: Building Above
+    uniqueID: 2413751335
+    locked: 0
+  - name: Building Details
+    uniqueID: 2117391359
     locked: 0

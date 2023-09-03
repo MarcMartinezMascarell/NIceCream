@@ -112,6 +112,13 @@ public class CraftingKeeperDisplay : MonoBehaviour
         _itemPreviewName.text = itemData.DisplayName;
         _itemPreviewDescription.text = itemData.Description;
     }
+    public void CleanAllHighlights()
+    {
+        foreach (Transform child in _recipesListPanel.transform)
+        {
+            child.GetComponent<CraftingItemSlotUI>().CleanHighlight();
+        }
+    }
 
     private IEnumerator WaitRecipeTime()
     {
